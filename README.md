@@ -1,7 +1,7 @@
 # House_Scrapping
-Repositorio de las casas disponibles en cada ciudad
+Repositorio de las casas en venta disponibles en las diferentes ciudades españolas
 
-Extrae información de las diferentes viviendas disponibles en la página web [pisos.com](https://www.pisos.com/) clasificados por ciudades.
+Extrae información de las diferentes viviendas disponibles en venta en la página web [pisos.com](https://www.pisos.com/) por ciudades.
 
 Para ejecutar el script es necesario instalar la siguientes bibliotecas:
 ```
