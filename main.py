@@ -26,12 +26,20 @@ print('Ciudades a buscar: ' + str(len(list_cities)))
 pisos = []
 
 # Get all pisos for sale for each city
+cnt = 0
 for city in list_cities:
-    pisos = pisos + aux.scanPath(domain, city)
-    print(len(pisos))
+    try:
+    	pisos = pisos + aux.scanPath(domain, city)
+    	pisos = pd.DataFrame(pisos)
+    	pisos.to_csv('pisos.csv', mode='a', encoding='utf-8', index=False)
+    	pisos = []
+    	print(cnt)
+    except:
+	    print("Error in: " + city)
+    cnt += 1
 
 print('Búsqueda terminada')
 
 # Export to csv
-pisos = pd.DataFrame(pisos)
-pisos.to_csv('pisos.csv', encoding='utf-8')
+#pisos = pd.DataFrame(pisos)
+#pisos.to_csv('pisos.csv', encoding='utf-8')
