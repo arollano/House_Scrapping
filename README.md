@@ -6,6 +6,8 @@ Extrae información de las diferentes viviendas disponibles en venta en la pági
 Para ejecutar el script es necesario instalar la siguientes bibliotecas:
 ```
 pip install pandas
+pip install aux
+pip install logging
 pip install requests
 pip install beautifulsoup4
 ```
