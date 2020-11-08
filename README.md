@@ -11,8 +11,17 @@ pip install lxml
 pip install beautifulsoup4
 ```
 
-Actualmente solo extrae las siguientes características de las viviendas:
-- Ciudad
+Actualmente extrae las siguientes características de las viviendas:
+- Título Anuncio
+- Descripcion
+- Localización
+- Foto
+- Recomendacion
+- Precio
 - Superficie
 - Numero de habitaciones
-- Precio
+- Precio/m2
+- Baños
+- Número fotos
+- Tipo
+- Region
